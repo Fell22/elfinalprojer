@@ -1,0 +1,146 @@
+/* universal selector */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box ;
+}
+
+/* css for body */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-size: 110%;
+    overflow-x: hidden;
+}
+
+/* css for header */
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+/* css for logoimage */
+.logoimage {
+    max-width: 150px;
+    width: 100%;
+    margin: 1em;
+}
+
+/* css for the header background */
+.hero {
+    height: 100vh;
+    background-image: url(/images/eldenring.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* display nav bar as flex */
+nav {
+    display:flex;
+    
+}
+
+nav div {
+    margin: 0 1em;
+    font-size: 110%;
+    font-weight: 700;
+}
+
+nav a {
+    color: white;
+    
+}
+
+nav a:link, nav a:visited {
+    text-decoration: none;
+}
+
+nav a:hover, nav a:focus {
+    text-decoration: underline;
+    color: fuchsia;
+}
+
+/* css for large title text */
+.title-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin: 30vh 0 0 -40vw;
+}
+
+.title-text h1 {
+    font-size: 400%;
+    letter-spacing: 20px;
+    outline: 3px solid fuchsia;
+    color: fuchsia;
+
+}
+
+.title-text p {
+    padding-bottom: 5px;
+}
+
+/* css for site summary */
+.summary {
+    padding: 1em;
+    text-align: center;
+
+}
+
+.summary h1 {
+    padding-bottom: .5em;
+}
+
+
+footer {
+    padding: 40px 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100vw;
+
+}
+
+/* code for the return to top button */
+#cornerBtn {
+    display: none; /* Hidden by default */
+    position: fixed;
+    right: 5px;
+    bottom: 220px;
+    z-index: 99; /* Make sure it does not overlap */
+    border: 1px solid black;
+    outline: none; /* Remove outline */
+    font-weight: bold;
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: .5em .5em;
+    margin: 0 1em 3px 0;
+    font-family: 'Nova Square', cursive;
+    font-size: 100%;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,.25);
+    color: white;
+    transition: all .5s;
+  }
+  
+  #cornerBtn:hover {
+    background-color: rgba(0,0,0,1);
+    color: red;
+    border: 1px solid red;
+  }
+  
+
+  /* for mobile screens */
+  @media only screen and (max-width: 600px) {
+      .title-text {
+          width: 80vw;
+          margin-left: 2em;
+          padding: 0;
+      }
+      
+      #cornerBtn {
+          bottom: 50px;
+      }
+  }
